@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Smart Hostel</string>
+    <string-array name="complaint_categories">
+        <item>Electricity</item>
+        <item>Water</item>
+        <item>Cleaning</item>
+        <item>Internet</item>
+        <item>Others</item>
+    </string-array>
+</resources>

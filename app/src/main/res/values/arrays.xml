@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="complaint_statuses">
+        <item>Pending</item>
+        <item>In Progress</item>
+        <item>Resolved</item>
+    </string-array>
+</resources>
