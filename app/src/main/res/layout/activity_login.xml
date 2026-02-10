@@ -54,14 +54,16 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Name">
+                        android:hint="Name"
+                        android:textColorHint="@color/textSecondary">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/etName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textPersonName"
-                            android:text="Alice" />
+                            android:text="Alice"
+                            android:textColor="@color/textPrimary" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -71,6 +73,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:hint="Password"
+                        android:textColorHint="@color/textSecondary"
                         app:passwordToggleEnabled="true">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -78,7 +81,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textPassword"
-                            android:text="pass123" />
+                            android:text="pass123"
+                            android:textColor="@color/textPrimary" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <TextView
@@ -101,14 +105,16 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:checked="true"
-                            android:text="Student" />
+                            android:text="Student"
+                            android:textColor="@color/textPrimary" />
 
                         <RadioButton
                             android:id="@+id/rbWarden"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Warden" />
+                            android:text="Warden"
+                            android:textColor="@color/textPrimary" />
                     </RadioGroup>
 
                     <com.google.android.material.button.MaterialButton
