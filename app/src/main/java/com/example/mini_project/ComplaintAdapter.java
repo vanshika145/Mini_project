@@ -13,9 +13,15 @@ import java.util.List;
 public class ComplaintAdapter extends RecyclerView.Adapter<ComplaintAdapter.ComplaintViewHolder> {
 
     private List<Complaint> complaintList;
+    private OnItemClickListener listener;
 
     public ComplaintAdapter(List<Complaint> complaintList) {
         this.complaintList = complaintList;
+    }
+
+    public ComplaintAdapter(List<Complaint> complaintList, OnItemClickListener listener) {
+        this.complaintList = complaintList;
+        this.listener = listener;
     }
 
     @NonNull
@@ -41,6 +47,12 @@ public class ComplaintAdapter extends RecyclerView.Adapter<ComplaintAdapter.Comp
         } else {
             holder.tvStatus.setBackgroundResource(R.drawable.bg_status_resolved);
         }
+
+        holder.itemView.setOnClickListener(v -> {
+            if (listener != null) {
+                listener.onItemClick(complaint);
+            }
+        });
     }
 
     @Override

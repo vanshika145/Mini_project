@@ -41,10 +41,29 @@ public class ViewComplaintsActivity extends AppCompatActivity {
     }
 
     private void loadDummyComplaints() {
-        complaintList.add(new Complaint("Leaking tap in washroom", "Water", "Pending", "25 Oct 2023"));
-        complaintList.add(new Complaint("Fan not working", "Electricity", "In Progress", "24 Oct 2023"));
-        complaintList.add(new Complaint("WiFi signal weak", "Internet", "Resolved", "22 Oct 2023"));
-        complaintList.add(new Complaint("Room cleaning requested", "Cleaning", "Pending", "25 Oct 2023"));
-        complaintList.add(new Complaint("Broken window glass", "Others", "Resolved", "20 Oct 2023"));
+        Complaint c1 = new Complaint("1", "Leaking tap in washroom", "Tap is leaking continuously.", "Water", "Student",
+                "25 Oct 2023");
+        c1.setStatus("Pending");
+        complaintList.add(c1);
+
+        Complaint c2 = new Complaint("2", "Fan not working", "Ceiling fan in room 101 is broken.", "Electricity",
+                "Student", "24 Oct 2023");
+        c2.setStatus("In Progress");
+        complaintList.add(c2);
+
+        Complaint c3 = new Complaint("3", "WiFi signal weak", "Cannot connect to WiFi in corridor.", "Internet",
+                "Student", "22 Oct 2023");
+        c3.setStatus("Resolved");
+        complaintList.add(c3);
+
+        Complaint c4 = new Complaint("4", "Room cleaning requested", "Room needs mopping.", "Cleaning", "Student",
+                "25 Oct 2023");
+        c4.setStatus("Pending");
+        complaintList.add(c4);
+
+        Complaint c5 = new Complaint("5", "Broken window glass", "Window pane cracked.", "Others", "Student",
+                "20 Oct 2023");
+        c5.setStatus("Resolved");
+        complaintList.add(c5);
     }
 }
